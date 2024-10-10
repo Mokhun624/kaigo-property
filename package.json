@@ -1,0 +1,33 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "stylelint": "stylelint --ignore-path .gitignore './**/*.{css,scss}'",
+    "stylelint:fix": "stylelint --fix --ignore-path .gitignore './**/*.{css,scss}'"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "destyle.css": "^4.0.1",
+    "next": "14.2.14",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.11",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14",
+    "prettier": "^3.3.3",
+    "sass": "^1.79.4",
+    "stylelint": "^16.9.0",
+    "stylelint-config-recess-order": "^5.1.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "typescript": "^5"
+  }
+}

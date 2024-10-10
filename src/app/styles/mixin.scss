@@ -1,0 +1,27 @@
+@mixin pc {
+  @media screen and (width >= 851px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (width <= 850px) {
+    @content;
+  }
+}
+
+@mixin inner {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @include sp {
+    padding: 0 25px;
+  }
+}
+
+@mixin under-1040 {
+  @media screen and (width <= 1040px) {
+    @content;
+  }
+}

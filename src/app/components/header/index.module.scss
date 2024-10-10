@@ -1,0 +1,154 @@
+@use '../../styles/mixin' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+
+  @include sp {
+    box-shadow: none;
+  }
+
+  > .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 60px;
+
+    @include under-1040 {
+      padding: 0 40px;
+    }
+
+    @include sp {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 0;
+    }
+  }
+
+  .logoWrap {
+    @include sp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    }
+  }
+
+  .logo {
+    position: relative;
+    display: block;
+    width: 188px;
+    height: 60px;
+
+    @include under-1040 {
+      width: 150px;
+      height: 48px;
+    }
+
+    @include sp {
+      width: 104px;
+      height: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .navi {
+    display: flex;
+    gap: 96px;
+    align-items: center;
+    justify-content: center;
+
+    @include under-1040 {
+      gap: 42px;
+    }
+
+    @include sp {
+      margin-top: 13.5px;
+    }
+
+    .item {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+
+      @include under-1040 {
+        font-size: 16px;
+      }
+
+      @include sp {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      @include pc {
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+
+      &:nth-of-type(2) {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          top: -5px;
+          left: -48px;
+          display: block;
+          width: 1px;
+          height: 30px;
+          content: '';
+          background-color: #707070;
+
+          @include under-1040 {
+            left: -21px;
+          }
+
+          @include sp {
+            top: 50%;
+            height: 15px;
+            transform: translateY(-50%);
+          }
+        }
+
+        &::after {
+          position: absolute;
+          top: -5px;
+          right: -48px;
+          display: block;
+          width: 1px;
+          height: 30px;
+          content: '';
+          background-color: #707070;
+
+          @include under-1040 {
+            right: -21px;
+          }
+
+          @include sp {
+            top: 50%;
+            right: -21px;
+            height: 15px;
+            transform: translateY(-50%);
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        > a {
+          color: #e26803;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@use '../../styles/mixin' as *;
+
+.footer {
+  padding: 65.5px 0 38px;
+  background-color: #a89779;
+
+  @include sp {
+    padding: 37.5px 0 15px;
+  }
+
+  > .inner {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    position: relative;
+    width: 342px;
+    height: 64px;
+    margin-inline: auto;
+    margin-bottom: 70px;
+
+    @include sp {
+      width: 171px;
+      height: 32px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .navi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 48px;
+    align-items: center;
+    justify-content: center;
+
+    @include sp {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    a {
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+
+      @include sp {
+        font-size: 13px;
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .copyright {
+    padding-top: 25px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+
+    @include sp {
+      font-size: 10px;
+      letter-spacing: 0.08em;
+    }
+  }
+}
