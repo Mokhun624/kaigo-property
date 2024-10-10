@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
+    "rootDir": "./",
     "baseUrl": "./",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
