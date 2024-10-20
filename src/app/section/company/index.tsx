@@ -1,7 +1,7 @@
 import s from './index.module.scss';
 // import Image from 'next/image';
 
-const Company = () => {
+const CompanySection = () => {
   return (
     <>
       <div className={`${s.company}`}>
@@ -48,4 +48,4 @@ const Company = () => {
   );
 };
 
-export default Company;
+export default CompanySection;

@@ -1,0 +1,23 @@
+<svg
+  xmlns='http://www.w3.org/2000/svg'
+  width='62'
+  height='28'
+  viewBox='0 0 62 28'
+>
+  <text
+    id='Scroll'
+    transform='translate(31 21)'
+    fill='#151515'
+    fontSize='22'
+    fontFamily="DIN2014-Bold, 'DIN \32 014'"
+    fontWeight='700'
+    letterSpacing='0.05em'
+  >
+    <tspan
+      x='-22.173'
+      y='0'
+    >
+      Scroll
+    </tspan>
+  </text>
+</svg>

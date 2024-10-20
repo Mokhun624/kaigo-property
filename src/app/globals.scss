@@ -38,3 +38,37 @@ a {
     display: none;
   }
 }
+
+.u-accordion {
+  &.u_1 {
+    .u-graph {
+      max-width: 963px;
+      aspect-ratio: 953 / 446;
+    }
+  }
+
+  &.u_2 {
+    .u-graph {
+      max-width: 669px;
+      aspect-ratio: 669 / 452;
+    }
+  }
+
+  &.u_3 {
+    .u-graph {
+      max-width: 830px;
+      aspect-ratio: 830 / 722;
+    }
+  }
+
+  .small {
+    font-size: 36px;
+  }
+
+  .asterisk {
+    display: inline-block;
+    font-size: 17px;
+    vertical-align: text-top;
+    translate: 4px 9px;
+  }
+}

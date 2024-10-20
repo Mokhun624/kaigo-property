@@ -26,10 +26,10 @@ const ReasonSection = () => {
                   data-name='1'
                   transform='translate(9 32)'
                   fill='#fff'
-                  font-size='34'
-                  font-family="DIN2014-Demi, 'DIN \32 014'"
-                  font-weight='300'
-                  letter-spacing='0.05em'
+                  fontSize='34'
+                  fontFamily="DIN2014-Demi, 'DIN \32 014'"
+                  fontWeight='300'
+                  letterSpacing='0.05em'
                 >
                   <tspan
                     x='-8.874'
@@ -44,7 +44,9 @@ const ReasonSection = () => {
               <Image
                 src='/reason_01.svg'
                 alt='グラフ'
-                layout='fill'
+                width={100}
+                height={100}
+                sizes='100vw'
                 objectFit='contain'
                 objectPosition='bottom'
                 className='sp-none'
@@ -52,7 +54,9 @@ const ReasonSection = () => {
               <Image
                 src='/reason_01_sp.svg'
                 alt='グラフ'
-                layout='fill'
+                width={100}
+                height={100}
+                sizes='100vw'
                 objectFit='contain'
                 className={`pc-none`}
               />
@@ -76,10 +80,10 @@ const ReasonSection = () => {
                   data-name='2'
                   transform='translate(9 32)'
                   fill='#fff'
-                  font-size='34'
-                  font-family="DIN2014-Demi, 'DIN \32 014'"
-                  font-weight='300'
-                  letter-spacing='0.05em'
+                  fontSize='34'
+                  fontFamily="DIN2014-Demi, 'DIN \32 014'"
+                  fontWeight='300'
+                  letterSpacing='0.05em'
                 >
                   <tspan
                     x='-8.874'
@@ -94,7 +98,9 @@ const ReasonSection = () => {
               <Image
                 src='/reason_02.svg'
                 alt='グラフ'
-                layout='fill'
+                width={100}
+                height={100}
+                sizes='100vw'
                 objectFit='contain'
               />
             </div>
@@ -117,10 +123,10 @@ const ReasonSection = () => {
                   data-name='3'
                   transform='translate(9 32)'
                   fill='#fff'
-                  font-size='34'
-                  font-family="DIN2014-Demi, 'DIN \32 014'"
-                  font-weight='300'
-                  letter-spacing='0.05em'
+                  fontSize='34'
+                  fontFamily="DIN2014-Demi, 'DIN \32 014'"
+                  fontWeight='300'
+                  letterSpacing='0.05em'
                 >
                   <tspan
                     x='-8.874'
@@ -135,7 +141,9 @@ const ReasonSection = () => {
               <Image
                 src='/reason_03.svg'
                 alt='グラフ'
-                layout='fill'
+                width={100}
+                height={100}
+                sizes='100vw'
                 objectFit='contain'
                 objectPosition='0 26px'
                 className='sp-none'
@@ -143,7 +151,9 @@ const ReasonSection = () => {
               <Image
                 src='/reason_03_sp.svg'
                 alt='グラフ'
-                layout='fill'
+                width={100}
+                height={100}
+                sizes='100vw'
                 objectFit='contain'
                 className={`pc-none`}
               />
@@ -166,9 +176,9 @@ const ReasonSection = () => {
               id='REASON'
               transform='translate(8 47) rotate(90)'
               fill='#e26803'
-              font-size='26'
-              font-family="DIN2014-Demi, 'DIN \32 014'"
-              font-weight='300'
+              fontSize='26'
+              fontFamily="DIN2014-Demi, 'DIN \32 014'"
+              fontWeight='300'
             >
               <tspan
                 x='-46.449'

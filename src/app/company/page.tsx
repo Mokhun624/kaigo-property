@@ -1,10 +1,10 @@
-import Company from '../section/company';
 import type { NextPage } from 'next';
+import CompanySection from '../section/Company';
 
 const Page: NextPage = () => {
   return (
     <main>
-      <Company />
+      <CompanySection />
     </main>
   );
 };

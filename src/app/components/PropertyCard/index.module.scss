@@ -1,0 +1,132 @@
+@use '../../styles/mixin' as *;
+
+.propertyCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+
+  .mapImg {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    aspect-ratio: 380 / 240;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .detail {
+    padding: 24px 32px;
+
+    .address {
+      padding-bottom: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    .table {
+      width: 100%;
+
+      th {
+        width: 86px;
+        padding: 8px 0;
+        padding-right: 12px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+      }
+
+      td {
+        padding: 8px 0;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  .noi {
+    padding: 11px 10px 22px;
+    background-color: #b7933b;
+
+    .noiTitle {
+      padding-bottom: 12px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+
+    .noiContent {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .noiYield {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 142px;
+      height: 142px;
+      color: #e26803;
+      background-color: #fffaad;
+      border-radius: 50%;
+
+      .text {
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .value {
+        font-family: Roboto, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+
+        span {
+          font-size: 50px;
+          line-height: 1;
+          letter-spacing: -0.05em;
+        }
+      }
+    }
+
+    .cashFlow {
+      .title {
+        padding: 5px 16px;
+        margin-bottom: 9px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #b7933b;
+        letter-spacing: -0.03em;
+        background-color: #fff;
+        border-radius: 15px;
+      }
+
+      table {
+        color: #fff;
+
+        th,
+        td {
+          padding-bottom: 5px;
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 0.03em;
+        }
+
+        td {
+          padding-left: 6px;
+        }
+      }
+    }
+  }
+}
