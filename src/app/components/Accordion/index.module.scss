@@ -1,7 +1,9 @@
+@use '../../styles/mixin' as *;
+
 .accordionItem {
   position: relative;
 
-  > .number {
+  .number {
     position: absolute;
     top: -37px;
     left: 50%;
@@ -15,6 +17,21 @@
     background-color: #e26803;
     border-radius: 50%;
     transform: translateX(-50%);
+
+    @include sp {
+      top: -18px;
+      width: 37px;
+      height: 37px;
+
+      svg {
+        width: 13px;
+        height: 30px;
+
+        text {
+          transform: translate(13px, 45px);
+        }
+      }
+    }
   }
 
   > .head {
@@ -24,19 +41,35 @@
     padding: 36px 88px 23px;
     background-color: #f4f2e4;
     border-radius: 10px 10px 0 0;
+
+    @include sp {
+      flex-direction: column;
+      gap: 10px;
+      padding: 33px 22px 18.5px;
+    }
   }
 
   .text {
     font-size: 46px;
+    font-weight: 700;
     line-height: 1.47;
     letter-spacing: 0.05em;
 
-    > .small {
-      font-size: 36px;
+    @include sp {
+      font-size: 21.5px;
+      text-align: center;
     }
 
-    > .asterisk {
-      font-size: 17px;
+    .note {
+      padding-top: 10px;
+      font-size: 21.66px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+
+      @include sp {
+        padding-top: 4px;
+        font-size: 11px;
+      }
     }
   }
 
@@ -44,6 +77,11 @@
     position: relative;
     width: 200px;
     height: 200px;
+
+    @include sp {
+      width: 121px;
+      height: 121px;
+    }
 
     img {
       width: 100%;
@@ -62,6 +100,10 @@
     > .inner {
       padding: 0 70px 62px;
 
+      @include sp {
+        padding: 0 15px 15px;
+      }
+
       > .title {
         display: flex;
         align-items: center;
@@ -70,10 +112,17 @@
         height: 34px;
         margin-bottom: 38px;
         font-size: 20px;
+        font-weight: 700;
         color: #fff;
         letter-spacing: 0.075em;
         background-color: #e26803;
         border-radius: 25px;
+
+        @include sp {
+          height: 25px;
+          margin-bottom: 15px;
+          font-size: 14px;
+        }
       }
     }
 
@@ -81,21 +130,39 @@
     .btm {
       margin-bottom: 62px;
       font-size: 20px;
+      font-weight: 700;
       line-height: 1.6;
       text-align: center;
       letter-spacing: 0.075em;
 
+      @include sp {
+        margin-bottom: 26.85px;
+        font-size: 13px;
+      }
+
       > span {
         font-size: 25px;
         color: #e26803;
+
+        @include sp {
+          font-size: 18px;
+        }
       }
 
       > p {
         font-size: 26px;
 
+        @include sp {
+          font-size: 13px;
+        }
+
         > span {
           font-size: 36px;
           color: #e26803;
+
+          @include sp {
+            font-size: 18px;
+          }
         }
       }
     }
@@ -104,11 +171,20 @@
       position: relative;
       width: 100%;
       margin: 62px auto;
+
+      @include sp {
+        margin: 26.85px auto;
+      }
     }
 
     .explanation {
       display: flex;
       border: 4px solid #e26803;
+
+      @include sp {
+        flex-direction: column;
+        border: none;
+      }
 
       > .title {
         display: flex;
@@ -121,6 +197,14 @@
         letter-spacing: 0.5em;
         background-color: #e26803;
         writing-mode: vertical-rl;
+
+        @include sp {
+          width: 100%;
+          height: 22px;
+          font-size: 14px;
+          letter-spacing: 0.5em;
+          writing-mode: horizontal-tb;
+        }
       }
 
       > .content {
@@ -129,6 +213,12 @@
         font-size: 16px;
         line-height: 1.8;
         background-color: #fff;
+
+        @include sp {
+          padding: 15px;
+          font-size: 14px;
+          line-height: 1.61;
+        }
       }
     }
   }
@@ -141,11 +231,17 @@
     width: 100%;
     height: 50px;
     font-size: 22px;
+    font-weight: 700;
     color: #fff;
     letter-spacing: 0.075em;
     cursor: pointer;
     background-color: #e26803;
     border-radius: 0 0 10px 10px;
+
+    @include sp {
+      height: 40px;
+      font-size: 16px;
+    }
 
     &::before {
       position: absolute;
@@ -156,6 +252,12 @@
       content: '';
       background-color: #fff;
       transform: translateY(-50%);
+
+      @include sp {
+        right: 12.5px;
+        width: 13px;
+        height: 1.5px;
+      }
     }
 
     &::after {
@@ -168,6 +270,12 @@
       background-color: #fff;
       transition: all 0.3s ease;
       transform: translateY(-50%);
+
+      @include sp {
+        right: 18.25px;
+        width: 1.5px;
+        height: 13px;
+      }
     }
   }
 

@@ -5,13 +5,23 @@
   padding: 0 0 120px;
   background-color: #f4f2e4;
 
+  @include sp {
+    padding: 0;
+  }
+
   > .inner {
     @include inner;
   }
 
   .content {
-    padding: 76px 0 80px;
+    padding: 76px 30px 80px;
     background-color: #fff;
+
+    @include sp {
+      width: calc(100% + 50px);
+      padding: 25px 37.5px 0;
+      margin-left: -25px;
+    }
 
     > .inner {
       max-width: 800px;
@@ -21,17 +31,31 @@
 
   .caption {
     font-size: 26px;
+    font-weight: 700;
     color: #e26803;
     text-align: center;
-    letter-spacing: 0.16px;
+
+    @include sp {
+      font-size: 14px;
+      letter-spacing: 0.08em;
+    }
 
     .small {
       font-size: 20px;
+
+      @include sp {
+        font-size: 11px;
+      }
     }
 
     .large {
       font-size: 38px;
       letter-spacing: -0.02em;
+
+      @include sp {
+        font-size: 25px;
+        line-height: 1.5;
+      }
     }
   }
 
@@ -40,6 +64,11 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 2;
+
+    @include sp {
+      padding-top: 19.1px;
+      font-size: 13px;
+    }
   }
 
   .image {
@@ -48,9 +77,19 @@
     height: 308px;
     margin-top: 30px;
 
+    @include sp {
+      width: calc(100% + 75px);
+      height: 115.5px;
+      margin-left: -37.5px;
+    }
+
     img {
+      position: absolute;
+      inset: 0;
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
   }
 }

@@ -5,19 +5,25 @@ import AccordionItem from '../../components/Accordion';
 
 const FeaturesSection = () => {
   return (
-    <section className={`${s.features}`}>
+    <section
+      className={`${s.features}`}
+      id='features'
+    >
       <div className={`${s.inner}`}>
         <h2 className={`${s.title}`}>
           超高齢化社会に求められる介護施設。
           <br />
           <span className={`${s.large}`}>
-            「ヘルスケア不動産投資」<span className={`${s.small}`}>の</span>3つの特長。
+            「ヘルスケア不動産投資」<span className={`${s.small}`}>の</span>
+            <br className='pc-none' />
+            3つの特長。
           </span>
           <span className={`${s.bar}`}>
             <Image
               src='/title_bar.svg'
               alt=''
-              layout='fill'
+              width={100}
+              height={100}
               objectFit='contain'
             />
           </span>
@@ -33,6 +39,7 @@ const FeaturesSection = () => {
                 <span className={'asterisk'}>※</span>
               </>
             }
+            note='※利回りは物件よって異なります。'
             imgPath='/feature_01.svg'
             topContent={
               <>
@@ -62,7 +69,9 @@ const FeaturesSection = () => {
             imgPath='/feature_02.svg'
             topContent={
               <>
-                介護事業者は、入居者からの入居費と国からの介護報酬によって、
+                介護事業者は、入居者からの入居費と
+                <br className='pc-none' />
+                国からの介護報酬によって、
                 <p>
                   <span>安定した事業運営</span>が<span>可能。</span>
                 </p>
@@ -70,7 +79,8 @@ const FeaturesSection = () => {
             }
             btmContent={
               <>
-                事業収入の大半が<span>保険適用サービス</span>であることで
+                事業収入の大半が <br className='pc-none' />
+                <span>保険適用サービス</span>であることで
                 <p>
                   <span>安定的な経営</span>が<span>実現！</span>
                 </p>
@@ -95,7 +105,9 @@ const FeaturesSection = () => {
                 <p>
                   <span>介護施設のニーズ</span>が<span>高まります。</span>
                 </p>
-                その後も、総人口減少に対しての比率は高くなり続ける見込みです。
+                その後も、総人口減少に対しての比率は
+                <br className='pc-none' />
+                高くなり続ける見込みです。
               </>
             }
             graphPath='/graph_03.png'

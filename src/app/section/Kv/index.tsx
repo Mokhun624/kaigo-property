@@ -14,6 +14,16 @@ const Kv = () => {
               height={100}
               sizes='100vw'
               objectFit='contain'
+              className='sp-none'
+            />
+            <Image
+              src='/caption_kv_sp.svg'
+              alt='賢い人に選ばれる。ヘルスケア不動産投資。'
+              width={100}
+              height={100}
+              sizes='100vw'
+              objectFit='contain'
+              className='pc-none'
             />
           </h1>
           <div className={`${s.scroll}`}>
@@ -33,6 +43,16 @@ const Kv = () => {
             height={100}
             sizes='100vw'
             objectFit='contain'
+            className='sp-none'
+          />
+          <Image
+            src='/banner_kv_sp.jpg'
+            alt='Top Image'
+            width={100}
+            height={100}
+            sizes='100vw'
+            objectFit='contain'
+            className='pc-none'
           />
         </div>
       </div>

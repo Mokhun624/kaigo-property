@@ -58,7 +58,7 @@ const ReasonSection = () => {
                 height={100}
                 sizes='100vw'
                 objectFit='contain'
-                className={`pc-none`}
+                className='pc-none'
               />
             </div>
             <div className={`${s.text}`}>
@@ -102,6 +102,16 @@ const ReasonSection = () => {
                 height={100}
                 sizes='100vw'
                 objectFit='contain'
+                className='sp-none'
+              />
+              <Image
+                src='/reason_02_sp.svg'
+                alt='グラフ'
+                width={100}
+                height={100}
+                sizes='100vw'
+                objectFit='contain'
+                className='pc-none'
               />
             </div>
             <div className={`${s.text}`}>

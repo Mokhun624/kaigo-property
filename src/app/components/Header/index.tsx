@@ -20,14 +20,14 @@ const Footer = () => {
         </div>
         <ul className={`${s.navi}`}>
           <li className={`${s.item}`}>
-            <Link href='/about'>
+            <Link href='#features'>
               ヘルスケア
               <br className={`pc-none`} />
               不動産投資の特長
             </Link>
           </li>
           <li className={`${s.item}`}>
-            <Link href='/about'>ご紹介の物件例</Link>
+            <Link href='#example'>ご紹介の物件例</Link>
           </li>
           <li className={`${s.item}`}>
             <Link href='/about'>物件詳細を見る</Link>

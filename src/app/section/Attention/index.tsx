@@ -9,7 +9,10 @@ const AttentionSection = () => {
           <div className={`${s.inner}`}>
             <div className={`${s.caption}`}>
               介護施設<span className={`${s.small}`}>の</span>ヘルスケア不動産投資
-              <span className={`${s.small}`}>が、</span>
+              <span className={`${s.small}`}>
+                が、
+                <br className='pc-none' />
+              </span>
               <span className={`${s.large}`}>注目されている理由。</span>
             </div>
             <div className={`${s.text}`}>

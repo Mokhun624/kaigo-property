@@ -5,6 +5,10 @@
   padding: 56px 0 62px;
   background-color: #ede8cc;
 
+  @include sp {
+    padding: 30px 0;
+  }
+
   > .inner {
     @include inner;
 
@@ -16,23 +20,42 @@
       height: 48px;
       margin-inline: auto;
       font-size: 20px;
+      font-weight: 700;
       color: #fff;
       letter-spacing: 0.05em;
       background-color: #e26803;
       border-radius: 40px;
+
+      @include sp {
+        width: 254.64px;
+        height: 51.525px;
+        font-size: 14px;
+        text-align: center;
+      }
     }
 
     > .text {
       padding-top: 40px;
       font-size: 22px;
-      line-height: 1.6;
+      font-weight: 700;
+      line-height: 1.8;
       text-align: center;
       letter-spacing: 0.05em;
+
+      @include sp {
+        padding-top: 24px;
+        font-size: 14px;
+      }
 
       > .caption {
         font-size: 42.64px;
         color: #e26803;
         letter-spacing: 0.08em;
+
+        @include sp {
+          font-size: 24px;
+          letter-spacing: 0.05em;
+        }
       }
     }
 
@@ -40,6 +63,10 @@
       max-width: 1020px;
       margin-inline: auto;
       margin-top: 40px;
+
+      @include sp {
+        margin-top: 24px;
+      }
 
       > .graph {
         position: relative;
@@ -55,6 +82,12 @@
         padding-top: 23px;
         font-size: 16px;
         line-height: 2;
+
+        @include sp {
+          padding-top: 14px;
+          font-size: 13px;
+          font-weight: 500;
+        }
       }
     }
   }

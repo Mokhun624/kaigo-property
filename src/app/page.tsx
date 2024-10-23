@@ -12,11 +12,11 @@ export default function Home() {
     <main>
       <Kv />
       <ReasonSection />
-      <ExampleSection />
+      <ExampleSection target={true} />
       <AttentionSection />
       <FeaturesSection />
       <StructureSection />
-      <ExampleSection />
+      <ExampleSection target={false} />
     </main>
   );
 }

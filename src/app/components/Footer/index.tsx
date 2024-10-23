@@ -15,19 +15,19 @@ const Footer = () => {
         </div>
         <ul className={`${s.navi}`}>
           <li className={`${s.navi__item}`}>
-            <Link href='/about'>ヘルスケア不動産投資の特長</Link>
+            <Link href='#features'>ヘルスケア不動産投資の特長</Link>
           </li>
           <li className={`${s.navi__item}`}>
-            <Link href='/about'>ご紹介の物件例</Link>
+            <Link href='#example'>ご紹介の物件例</Link>
           </li>
           <li className={`${s.navi__item}`}>
             <Link href='/company'>会社概要</Link>
           </li>
           <li className={`${s.navi__item}`}>
-            <Link href='/about'>お問い合わせ</Link>
+            <Link href='/'>お問い合わせ</Link>
           </li>
           <li className={`${s.navi__item}`}>
-            <Link href='/about'>プライバシーポリシー</Link>
+            <Link href='/'>プライバシーポリシー</Link>
           </li>
         </ul>
         <div className={`${s.copyright}`}>© KAIGO PROPERTY,INC.All Right Reserved.</div>

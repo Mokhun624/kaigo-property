@@ -11,20 +11,37 @@
     height: 240px;
     aspect-ratio: 380 / 240;
 
+    @include sp {
+      width: 209.5px;
+      height: 132.5px;
+    }
+
     > img {
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
+      object-fit: cover;
     }
   }
 
   .detail {
     padding: 24px 32px;
 
+    @include sp {
+      padding: 12px 16px;
+    }
+
     .address {
       padding-bottom: 16px;
       font-size: 20px;
       font-weight: 600;
       letter-spacing: 0.05em;
+
+      @include sp {
+        padding-bottom: 8.1px;
+        font-size: 11px;
+      }
     }
 
     .table {
@@ -38,6 +55,12 @@
         font-weight: 400;
         line-height: 1.8;
         letter-spacing: 0.05em;
+
+        @include sp {
+          width: 43.675px;
+          padding: 4px 0;
+          font-size: 7px;
+        }
       }
 
       td {
@@ -46,6 +69,11 @@
         font-weight: 600;
         line-height: 1.4;
         letter-spacing: 0.05em;
+
+        @include sp {
+          padding: 4px 0;
+          font-size: 9px;
+        }
       }
     }
   }
@@ -54,6 +82,10 @@
     padding: 11px 10px 22px;
     background-color: #b7933b;
 
+    @include sp {
+      padding: 11.1px 12.7px 12px;
+    }
+
     .noiTitle {
       padding-bottom: 12px;
       font-size: 20px;
@@ -61,6 +93,11 @@
       color: #fff;
       text-align: center;
       letter-spacing: 0.05em;
+
+      @include sp {
+        padding-bottom: 7px;
+        font-size: 10.5px;
+      }
     }
 
     .noiContent {
@@ -81,10 +118,19 @@
       background-color: #fffaad;
       border-radius: 50%;
 
+      @include sp {
+        width: 78.455px;
+        height: 78.455px;
+      }
+
       .text {
         font-size: 15px;
         font-weight: 700;
         text-align: center;
+
+        @include sp {
+          font-size: 8px;
+        }
       }
 
       .value {
@@ -92,10 +138,19 @@
         font-size: 20px;
         font-weight: 700;
 
+        @include sp {
+          padding-top: 3px;
+          font-size: 11px;
+        }
+
         span {
           font-size: 50px;
           line-height: 1;
           letter-spacing: -0.05em;
+
+          @include sp {
+            font-size: 27px;
+          }
         }
       }
     }
@@ -110,6 +165,13 @@
         letter-spacing: -0.03em;
         background-color: #fff;
         border-radius: 15px;
+
+        @include sp {
+          padding: 4px 0;
+          margin-bottom: 5px;
+          font-size: 7.5px;
+          text-align: center;
+        }
       }
 
       table {
@@ -121,10 +183,18 @@
           font-size: 18px;
           font-weight: 500;
           letter-spacing: 0.03em;
+
+          @include sp {
+            font-size: 9.5px;
+          }
         }
 
         td {
           padding-left: 6px;
+
+          @include sp {
+            padding-left: 3px;
+          }
         }
       }
     }
