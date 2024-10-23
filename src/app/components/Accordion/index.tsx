@@ -1,6 +1,9 @@
 import s from './index.module.scss';
 import Image from 'next/image';
+import Modal from 'react-modal';
 import { useState, ReactNode } from 'react';
+
+Modal.setAppElement('.graphModal');
 
 type Props = {
   index: number;
@@ -24,6 +27,7 @@ const AccordionItem = ({
   explanation,
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [modalIsOpen, setIsModalOpen] = useState(false);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
@@ -84,8 +88,42 @@ const AccordionItem = ({
               <Image
                 src={graphPath}
                 alt=''
-                layout='fill'
+                width={100}
+                height={100}
+                sizes='100vw'
+                objectFit='contain'
               />
+              <div className='graphModal pc-none'>
+                <button
+                  onClick={() => setIsModalOpen(true)}
+                  className={`${s.openBtn}`}
+                >
+                  <Image
+                    src='/icn_search.svg'
+                    alt=''
+                    width={100}
+                    height={100}
+                    sizes='100vw'
+                    objectFit='contain'
+                  />
+                </button>
+                <Modal isOpen={modalIsOpen}>
+                  <button
+                    onClick={() => setIsModalOpen(false)}
+                    className='closeBtn'
+                  ></button>
+                  <div className='graph-inner'>
+                    <Image
+                      src={graphPath}
+                      alt=''
+                      width={100}
+                      height={100}
+                      sizes='100vw'
+                      objectFit='contain'
+                    />
+                  </div>
+                </Modal>
+              </div>
             </div>
             {btmContent && <div className={`${s.btm}`}>{btmContent}</div>}
             <div className={`${s.explanation}`}>

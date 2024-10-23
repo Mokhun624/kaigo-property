@@ -23,7 +23,7 @@ const ExampleSection = ({ target }: Props) => {
           <div className={`${s.list}`}>
             <PropertyCard
               address='大阪府茨木市豊川'
-              imgPath='/map_01.png'
+              imgPath='/map_01.jpg'
               table1='689,000,000円（税込）'
               table2={
                 <>

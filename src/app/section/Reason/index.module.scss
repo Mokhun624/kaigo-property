@@ -60,6 +60,13 @@
       flex-direction: column;
       align-items: center;
 
+      @include pc {
+        &:nth-of-type(2) {
+          border-right: 1px solid #dedede;
+          border-left: 1px solid #dedede;
+        }
+      }
+
       @include sp {
         &:not(:first-child) {
           padding-top: 24px;

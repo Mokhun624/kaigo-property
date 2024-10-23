@@ -37,7 +37,7 @@ const Kv = () => {
         </div>
         <div className={`${s.banner}`}>
           <Image
-            src='/banner_kv.jpg'
+            src='/banner_kv.png'
             alt='Top Image'
             width={100}
             height={100}
@@ -46,7 +46,7 @@ const Kv = () => {
             className='sp-none'
           />
           <Image
-            src='/banner_kv_sp.jpg'
+            src='/banner_kv_sp.png'
             alt='Top Image'
             width={100}
             height={100}

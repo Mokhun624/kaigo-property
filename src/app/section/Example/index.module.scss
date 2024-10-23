@@ -130,6 +130,7 @@
     }
 
     .btn {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -144,6 +145,29 @@
       background-color: #e26803;
       border-radius: 60px;
       transition: all 0.3s ease;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: 46px;
+        z-index: 3;
+        width: 21px;
+        height: 21px;
+        margin-top: -1px;
+        content: '';
+        border-top: solid 3px #fff;
+        border-right: solid 3px #fff;
+        border-radius: 1px;
+        transform: rotate(45deg) translateY(-50%);
+
+        @include sp {
+          right: 26px;
+          width: 11px;
+          height: 11px;
+          border-top: solid 2px #fff;
+          border-right: solid 2px #fff;
+        }
+      }
 
       @include sp {
         max-width: 554px;

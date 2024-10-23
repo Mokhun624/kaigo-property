@@ -84,3 +84,67 @@ a {
     }
   }
 }
+
+.ReactModal {
+  &__Overlay {
+    z-index: 1000;
+    background-color: rgba(#151515, 0.6) !important;
+  }
+
+  &__Content {
+    inset: 81px 0 !important;
+    display: flex;
+    flex-direction: column;
+
+    // align-items: center;
+    justify-content: center;
+    padding: 0 25px !important;
+    overflow: inherit !important;
+    background-color: #f4f2e4 !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+}
+
+.ReactModalPortal {
+  .closeBtn {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    display: block;
+    width: 23px;
+    height: 23px;
+
+    &::before {
+      position: absolute;
+      width: 23px;
+      height: 1.5px;
+      content: '';
+      background-color: #fff;
+      rotate: 45deg;
+    }
+
+    &::after {
+      position: absolute;
+      width: 23px;
+      height: 1.5px;
+      content: '';
+      background-color: #fff;
+      rotate: -45deg;
+    }
+  }
+
+  .graph-inner {
+    position: relative;
+    width: calc(100% + 50px);
+    padding: 0 25px 15px;
+    margin-left: -25px;
+    overflow: scroll;
+    text-align: center;
+
+    img {
+      width: 510px;
+      height: auto;
+    }
+  }
+}

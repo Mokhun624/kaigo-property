@@ -15,7 +15,7 @@ const FeaturesSection = () => {
           <br />
           <span className={`${s.large}`}>
             「ヘルスケア不動産投資」<span className={`${s.small}`}>の</span>
-            <br className='pc-none' />
+            <br className={`${s.br}`} />
             3つの特長。
           </span>
           <span className={`${s.bar}`}>

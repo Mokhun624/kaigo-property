@@ -1,0 +1,67 @@
+<svg
+  id='グループ_841'
+  data-name='グループ 841'
+  xmlns='http://www.w3.org/2000/svg'
+  width='59.824'
+  height='59.823'
+  viewBox='0 0 59.824 59.823'
+>
+  <g
+    id='楕円形_17'
+    data-name='楕円形 17'
+    transform='translate(0 29.737) rotate(-45)'
+    fill='#fff'
+    stroke='#e26803'
+    stroke-linejoin='bevel'
+    stroke-width='3'
+  >
+    <circle
+      cx='21.027'
+      cy='21.027'
+      r='21.027'
+      stroke='none'
+    />
+    <circle
+      cx='21.027'
+      cy='21.027'
+      r='19.527'
+      fill='none'
+    />
+  </g>
+  <g
+    id='グループ_841-2'
+    data-name='グループ 841'
+    transform='translate(20.559 21.31)'
+  >
+    <line
+      id='線_164'
+      data-name='線 164'
+      x2='18.023'
+      transform='translate(0 9.012)'
+      fill='none'
+      stroke='#e26803'
+      stroke-linecap='round'
+      stroke-width='2'
+    />
+    <line
+      id='線_165'
+      data-name='線 165'
+      x2='18.023'
+      transform='translate(9.012 0) rotate(90)'
+      fill='none'
+      stroke='#e26803'
+      stroke-linecap='round'
+      stroke-width='2'
+    />
+  </g>
+  <line
+    id='線_166'
+    data-name='線 166'
+    y2='16.521'
+    transform='translate(44.606 44.605) rotate(-45)'
+    fill='none'
+    stroke='#e26803'
+    stroke-linecap='round'
+    stroke-width='5'
+  />
+</svg>

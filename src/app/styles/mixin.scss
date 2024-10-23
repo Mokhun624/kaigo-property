@@ -4,6 +4,12 @@
   }
 }
 
+@mixin under1080 {
+  @media screen and (width <= 1080px) {
+    @content;
+  }
+}
+
 @mixin sp {
   @media screen and (width <= 850px) {
     @content;

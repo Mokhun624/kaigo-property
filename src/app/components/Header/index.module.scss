@@ -91,9 +91,13 @@
         text-align: center;
       }
 
-      @include pc {
-        &:hover {
-          opacity: 0.6;
+      a {
+        transition: all 0.3s ease;
+
+        @include pc {
+          &:hover {
+            opacity: 0.6;
+          }
         }
       }
 

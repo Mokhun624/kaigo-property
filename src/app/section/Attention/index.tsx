@@ -20,7 +20,7 @@ const AttentionSection = () => {
             </div>
             <div className={`${s.image}`}>
               <Image
-                src='/img_attention.jpg'
+                src='/img_attention.png'
                 alt='マップのイラスト'
                 width={100}
                 height={100}
