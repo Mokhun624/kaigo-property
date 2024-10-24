@@ -40,8 +40,7 @@ const ReasonSection = () => {
                 className='sp-none'
               />
               <Image
-                src='/reason_01_sp.png
-                '
+                src='/reason_01_sp.png'
                 alt='グラフ'
                 width={100}
                 height={100}

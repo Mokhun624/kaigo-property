@@ -1,5 +1,6 @@
 // import type { Metadata } from 'next';
 // import localFont from 'next/font/local';
+
 import { Noto_Sans_JP } from 'next/font/google';
 import 'destyle.css/destyle.min.css';
 import './globals.scss';

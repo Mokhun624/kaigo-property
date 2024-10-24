@@ -1,6 +1,7 @@
 @use '../../styles/mixin' as *;
 
 .footer {
+  position: relative;
   padding: 65.5px 0 38px;
   background-color: #a89779;
 
@@ -64,6 +65,28 @@
     @include sp {
       font-size: 10px;
       letter-spacing: 0.08em;
+    }
+  }
+
+  .pagetop {
+    @include pc {
+      display: none;
+    }
+
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1.5px solid #e26803;
+    border-radius: 50%;
+
+    img {
+      scale: 0.5;
     }
   }
 }

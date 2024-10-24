@@ -1,8 +1,12 @@
+'use client';
 import s from './index.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
-const Footer = () => {
+const Header = () => {
+  const path = usePathname();
+  const isTop = path === '/';
   return (
     <header className={`${s.header}`}>
       <div className={`${s.inner}`}>
@@ -20,14 +24,14 @@ const Footer = () => {
         </div>
         <ul className={`${s.navi}`}>
           <li className={`${s.item}`}>
-            <Link href='#features'>
+            <Link href={`${isTop ? '#features' : '/#features'}`}>
               ヘルスケア
               <br className={`pc-none`} />
               不動産投資の特長
             </Link>
           </li>
           <li className={`${s.item}`}>
-            <Link href='#example'>ご紹介の物件例</Link>
+            <Link href={`${isTop ? '#example' : '/#example'}`}>ご紹介の物件例</Link>
           </li>
           <li className={`${s.item}`}>
             <Link href='/about'>物件詳細を見る</Link>
@@ -38,4 +42,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Header;

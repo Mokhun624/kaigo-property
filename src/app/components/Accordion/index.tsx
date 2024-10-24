@@ -77,7 +77,7 @@ const AccordionItem = ({
                 sizes='100vw'
                 objectFit='contain'
               />
-              <div className='graphModal pc-none'>
+              <div className='pc-none graphModal'>
                 <button
                   onClick={() => setIsModalOpen(true)}
                   className={`${s.openBtn}`}
