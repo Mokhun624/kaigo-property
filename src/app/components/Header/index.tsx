@@ -34,7 +34,7 @@ const Header = () => {
             <Link href={`${isTop ? '#example' : '/#example'}`}>ご紹介の物件例</Link>
           </li>
           <li className={`${s.item}`}>
-            <Link href='/about'>物件詳細を見る</Link>
+            <Link href='/'>物件詳細を見る</Link>
           </li>
         </ul>
       </div>
