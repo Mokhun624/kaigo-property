@@ -36,30 +36,14 @@ const AccordionItem = ({
   return (
     <>
       <div className={`${s.accordionItem} u-accordion u_${index}`}>
-        <div className={`${s.number}`}>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width='26'
-            height='60'
-            viewBox='0 0 26 60'
-          >
-            <text
-              id='_1'
-              data-name='1'
-              transform='translate(13 45)'
-              fill='#fff'
-              fontSize='47'
-              fontFamily="DIN2014-Demi, 'DIN \32 014'"
-              fontWeight='300'
-            >
-              <tspan
-                x='-12.267'
-                y='0'
-              >
-                {index}
-              </tspan>
-            </text>
-          </svg>
+        <div className={`${s.number} number`}>
+          <Image
+            src={'/letter_' + index + '.svg'}
+            alt={index.toString()}
+            width={100}
+            height={100}
+            style={{ objectFit: 'contain' }}
+          />
         </div>
         <div className={`${s.head}`}>
           <div className={`${s.text}`}>

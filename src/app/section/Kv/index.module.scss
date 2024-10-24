@@ -6,6 +6,10 @@
     width: 100%;
     height: 100vh;
     background-color: #f4f2e4;
+
+    @include sp {
+      height: 100svh;
+    }
   }
 
   .caption {
@@ -34,8 +38,12 @@
     padding-bottom: 80px;
     transform: translateX(-50%);
 
-    img {
-      translate: 7px 0;
+    @include sp {
+      width: 49.43px;
+
+      img {
+        width: 100%;
+      }
     }
 
     &::before {
@@ -49,6 +57,11 @@
       background-color: #151515;
       border-radius: 50%;
       transform: translateX(-50%);
+
+      @include sp {
+        width: 9.5px;
+        height: 9.5px;
+      }
     }
 
     &::after {

@@ -12,25 +12,32 @@
     justify-content: center;
     width: 74px;
     height: 74px;
-    font-size: 47px;
     color: #fff;
+    text-align: center;
     background-color: #e26803;
     border-radius: 50%;
     transform: translateX(-50%);
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
     @include sp {
       top: -18px;
       width: 37px;
       height: 37px;
 
-      svg {
-        width: 13px;
-        height: 30px;
+      // svg {
+      //   width: 13px;
+      //   height: 30px;
 
-        text {
-          transform: translate(13px, 45px);
-        }
-      }
+      //   text {
+      //     transform: translate(13px, 45px);
+      //   }
+      // }
     }
   }
 
